@@ -1,0 +1,24 @@
+body,
+input,
+button {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/noise.png');
+  opacity: .75;
+  z-index: 500;
+  pointer-events: none;
+}
