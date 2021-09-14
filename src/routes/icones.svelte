@@ -11,7 +11,7 @@
 </script>
 
 <Layout>
-  <p>Mostre o orgulho que você tem por sua equipe! Clique em um dos ícones abaixo para copiar um comando e colar no chat da Twitch para defini-lo como seu novo emblema. Ícones fornecidos por <a href="https://simpleicons.org" target="_blank">Simple Icons</a>.</p>
+  <p>Mostre o orgulho que você tem por sua equipe! Clique em um dos {Object.entries(simpleIcons).length} ícones abaixo para copiar um comando e colar no chat da Twitch para defini-lo como seu novo emblema. Ícones fornecidos por <a href="https://simpleicons.org" target="_blank">Simple Icons</a>.</p>
 
   <SearchBar placeholder="Pesquise por ícones..." bind:query={query}/>
 
