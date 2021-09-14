@@ -36,8 +36,7 @@
     },
     {
       command: 'projeto',
-      description: 'Retorna informações do projeto atual.',
-      aliases: ['foo']
+      description: 'Retorna informações do projeto atual.'
     },
     {
       command: 'pronomes [principal] [secundário]',
