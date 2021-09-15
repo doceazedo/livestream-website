@@ -17,7 +17,7 @@
 </main>
 
 <footer>
-  fork me!
+  <a href="https://github.com/doceazedo/doceazedo.com">made by doceazedo. powered by <b>svelte</b> & <b>sveltekit</b>.</a>
 </footer>
 
 <style type="text/sass">
@@ -76,6 +76,11 @@
     align-items: center
     height: 8rem
     border-top: 1px solid rgb(#fff, .1)
+
+    a
+      text-decoration: none
+      text-align: center
+      color: #fff
 
   @media screen and (max-width: 768px)
     header

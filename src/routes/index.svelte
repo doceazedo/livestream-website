@@ -18,13 +18,13 @@
   <div class="list">
     <a href="https://musicwrap.xyz"><img src="/img/emoji-guitar.svg" alt=""> musicwrap.xyz</a>
     <a href="https://lucasfernandes.com.br"><img src="/img/emoji-technologist.svg" alt=""> lucasfernandes.com.br</a>
-    <a sveltekit:prefetch href="/bot"><img src="/img/emoji-robot.svg" alt=""> comandos do bot</a>
-    <a sveltekit:prefetch href="/icones"><img src="/img/emoji-masks.svg" alt=""> ícones de equipe</a>
+    <a href="/bot"><img src="/img/emoji-robot.svg" alt=""> comandos do bot</a>
+    <a href="/icones"><img src="/img/emoji-masks.svg" alt=""> ícones de equipe</a>
   </div>
 
   <div class="socials">
     {#each socialIcons as social}
-      <a href="https://www.twitch.tv/doceazedo911" style="--color: #{social.icon.slug == 'github' ? 'aaa' : social.icon.hex}">
+      <a href={social.url} style="--color: #{social.icon.slug == 'github' ? 'aaa' : social.icon.hex}">
         {@html social.icon.svg}
       </a>
     {/each}
