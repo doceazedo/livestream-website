@@ -5,7 +5,7 @@
   const commands = [
     {
       command: 'discord',
-      description: 'Retorna o nosso Discord. Aproveita e entra lá: ',
+      description: 'Retorna o link do nosso Discord.',
       aliases: ['dc', 'disc']
     },
     {
@@ -21,7 +21,7 @@
     },
     {
       command: 'overlay',
-      description: 'Retorna o link do repositório do overlay, que é: ',
+      description: 'Retorna o link do repositório do overlay.',
       aliases: []
     },
     {
