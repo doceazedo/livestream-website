@@ -5,7 +5,7 @@
   const commands = [
     {
       command: 'discord',
-      description: 'Retorna o nosso Discord. Aproveita e entra lá: https://discord.gg/vEGRe2kq8B',
+      description: 'Retorna o nosso Discord. Aproveita e entra lá: ',
       aliases: ['dc', 'disc']
     },
     {
@@ -21,7 +21,7 @@
     },
     {
       command: 'overlay',
-      description: 'Retorna o link do repositório do overlay, que é: https://github.com/doceazedo/overlays',
+      description: 'Retorna o link do repositório do overlay, que é: ',
       aliases: []
     },
     {
@@ -36,10 +36,12 @@
     },
     {
       command: 'projeto',
-      description: 'Retorna informações do projeto atual.'
+      description: 'Retorna informações do projeto atual.',
+      aliases: []
     },
     {
-      command: 'pronomes [principal] [secundário]',
+      command: 'pronomes [principal]',
+      predicate: '[secundário]',
       description: 'Define um ou dois pronomes que irão aparecer juntos do seu nome no overlay. Informe "ela", "ele" e/ou "elu". O segundo parâmetro é opcional.',
       aliases: ['pronome', 'pronoun', 'pronouns'],
       example: 'pronomes ela elu'
@@ -61,7 +63,7 @@
       {#if [ command.command, ...command.aliases ].join(' ').includes(query)}
         <li>
           <h1>
-            <span>!{command.command}</span>
+            <span>!{command.command} {#if command.predicate} <span>{command.predicate}</span> {/if}</span>
             {#if command.aliases.length}
               ou ainda:
               <ul>
@@ -97,7 +99,7 @@
       align-items: center
       margin-bottom: 1rem
 
-      span
+      >span
         font-size: 1rem
         padding: .25rem .5rem
         margin-right: 1rem
@@ -125,4 +127,22 @@
     div
       margin-top: 1rem
       font-size: .75rem
+
+  @media screen and (max-width: 768px)
+    .commands
+      li
+        &:not(:last-child)
+          margin-bottom: 1rem
+
+        h1
+          font-size: 0
+
+          >span
+            margin: 0
+
+            span
+              display: none
+
+          ul
+            display: none
 </style>

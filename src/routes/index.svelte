@@ -1,3 +1,15 @@
+<script>
+  import simpleIcons from 'simple-icons';
+
+  const socialIcons = [
+    { url: 'https://www.twitch.tv/doceazedo911', icon: simpleIcons.Get('twitch') },
+    { url: 'https://github.com/doceazedo', icon: simpleIcons.Get('github') },
+    { url: 'https://twitter.com/doceazedo911', icon: simpleIcons.Get('twitter') },
+    { url: 'https://instagram.com/doceazedo911', icon: simpleIcons.Get('instagram') },
+    { url: 'https://discord.gg/vEGRe2kq8B', icon: simpleIcons.Get('discord') },
+  ];
+</script>
+
 <main>
   <figure></figure>
   <h1>doceazedo911</h1>
@@ -11,11 +23,11 @@
   </div>
 
   <div class="socials">
-    <a href="https://www.twitch.tv/doceazedo911"><img src="/img/twitch.svg" alt=""></a>
-    <a href="https://github.com/doceazedo"><img src="/img/github.svg" alt=""></a>
-    <a href="https://twitter.com/doceazedo911"><img src="/img/twitter.svg" alt=""></a>
-    <a href="https://instagram.com/doceazedo911"><img src="/img/instagram.svg" alt=""></a>
-    <a href="https://discord.gg/vEGRe2kq8B"><img src="/img/discord.svg" alt=""></a>
+    {#each socialIcons as social}
+      <a href="https://www.twitch.tv/doceazedo911" style="--color: #{social.icon.slug == 'github' ? 'aaa' : social.icon.hex}">
+        {@html social.icon.svg}
+      </a>
+    {/each}
   </div>
 
   <a href="https://github.com/doceazedo/doceazedo.com" class="footer">powered by <b>svelte</b></a>
@@ -86,6 +98,14 @@
 
       img
         height: 2rem
+
+      :global(svg)
+        height: 2rem
+        fill: #fff
+        transition: all .3s ease-out
+
+        &:hover
+          fill: var(--color)
 
   .footer
     display: block

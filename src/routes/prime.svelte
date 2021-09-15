@@ -75,4 +75,14 @@
     p
       margin: 0
       text-align: center
+
+  @media screen and (max-width: 768px)
+    ul li
+      h1
+        flex-direction: column
+        white-space: unset
+        text-align: center
+
+        span
+          margin: 0 0 1rem
 </style>

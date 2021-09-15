@@ -36,4 +36,8 @@
 
     &:focus-within img
       opacity: 1
+
+  @media screen and (max-width: 768px)
+    div
+      margin-bottom: 1rem
 </style>

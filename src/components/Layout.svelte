@@ -76,4 +76,32 @@
     align-items: center
     height: 8rem
     border-top: 1px solid rgb(#fff, .1)
+
+  @media screen and (max-width: 768px)
+    header
+      flex-direction: column
+      align-items: center
+      height: unset
+      width: 100%
+      padding: 1rem
+
+      >a
+        margin-bottom: 1rem
+
+      navbar
+        justify-content: center
+        margin: unset
+        width: 100%
+        font-size: .75rem
+
+        a
+          height: unset
+
+          &:not(:last-child)
+            margin-right: 1rem
+
+    main,
+    footer
+      width: 100%
+      padding: 1rem
 </style>

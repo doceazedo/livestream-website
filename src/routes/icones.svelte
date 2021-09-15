@@ -58,4 +58,12 @@
     img
       // height: 3rem
       margin-left: .5rem
+
+  @media screen and (max-width: 768px)
+    p
+      margin: 2rem 0 3rem
+      color: rgba(#fff, .75)
+
+    .icons
+      grid-template-columns: repeat(2, 1fr)
 </style>
