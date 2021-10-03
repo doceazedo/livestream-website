@@ -1,0 +1,11 @@
+body,
+input,
+button {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
