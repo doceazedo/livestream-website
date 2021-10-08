@@ -29,11 +29,9 @@
       </a>
     {/each}
   </div>
-
-  <a href="https://github.com/doceazedo/doceazedo.com" class="footer">powered by <b>svelte</b></a>
 </main>
 
-<style type="text/sass">
+<style lang="sass">
   main
     max-width: 50rem
     margin: 0 auto
@@ -106,10 +104,4 @@
 
         &:hover
           fill: var(--color)
-
-  .footer
-    display: block
-    text-decoration: none
-    text-align: center
-    color: #fff
 </style>
