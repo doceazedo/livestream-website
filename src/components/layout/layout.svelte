@@ -17,7 +17,7 @@
 </main>
 
 <footer>
-  <a href="https://github.com/doceazedo/doceazedo.com">made by doceazedo. powered by <b>svelte</b> & <b>sveltekit</b>.</a>
+  <a href="https://github.com/doceazedo/doceazedo.com">made by doceazedo. powered by <b>svelte 🧡</b> & <b>astro 🚀</b></a>
 </footer>
 
 <style lang="sass">
