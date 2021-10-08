@@ -1,6 +1,5 @@
 <script>
-  import Layout from '../components/Layout.svelte';
-  import SearchBar from '../components/SearchBar.svelte';
+  import SearchBar from '../common/search-bar.svelte';
 
   const commands = [
     {
@@ -56,34 +55,32 @@
   let query = '';
 </script>
 
-<Layout>
-  <SearchBar placeholder="Pesquise por comandos..." bind:query={query}/>
-  <ul class="commands">
-    {#each commands as command}
-      {#if [ command.command, ...command.aliases ].join(' ').includes(query)}
-        <li>
-          <h1>
-            <span>!{command.command} {#if command.predicate} <span>{command.predicate}</span> {/if}</span>
-            {#if command.aliases.length}
-              ou ainda:
-              <ul>
-                {#each command.aliases as alias}
-                  <li>!{alias}</li>
-                {/each}
-              </ul>
-            {/if}
-          </h1>
-          <p>{command.description}</p>
-          {#if command.example}
-            <div><b>Exemplo:</b> !{command.example}</div>
+<SearchBar placeholder="Pesquise por comandos..." bind:query={query}/>
+<ul class="commands">
+  {#each commands as command}
+    {#if [ command.command, ...command.aliases ].join(' ').includes(query)}
+      <li>
+        <h1>
+          <span>!{command.command} {#if command.predicate} <span>{command.predicate}</span> {/if}</span>
+          {#if command.aliases.length}
+            ou ainda:
+            <ul>
+              {#each command.aliases as alias}
+                <li>!{alias}</li>
+              {/each}
+            </ul>
           {/if}
-        </li>
-      {/if}
-    {/each}
-  </ul>
-</Layout>
+        </h1>
+        <p>{command.description}</p>
+        {#if command.example}
+          <div><b>Exemplo:</b> !{command.example}</div>
+        {/if}
+      </li>
+    {/if}
+  {/each}
+</ul>
 
-<style type="text/sass">
+<style lang="sass">
   .commands > li
     padding: 1rem
     background-color: rgba(#23272a, .25)
