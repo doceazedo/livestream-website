@@ -4,7 +4,7 @@
 
 <div>
   <input type="text" {placeholder} bind:value={query}>
-  <img src="/img/search.svg" alt="">
+  <img src="/assets/img/search.svg" alt="">
 </div>
 
 <style lang="sass">
