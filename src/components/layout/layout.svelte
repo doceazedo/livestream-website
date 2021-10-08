@@ -8,6 +8,7 @@
     <a href="/">home</a>
     <a href="/bot">comandos</a>
     <a href="/icones">ícones</a>
+    <a href="/tts">tts</a>
     <a href="/prime">sub grátis</a>
   </navbar>
 </header>
