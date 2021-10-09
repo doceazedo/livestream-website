@@ -4,10 +4,10 @@
 
 <div>
   <input type="text" {placeholder} bind:value={query}>
-  <img src="/img/search.svg" alt="">
+  <img src="/assets/img/search.svg" alt="">
 </div>
 
-<style type="text/sass">
+<style lang="sass">
   div
     position: relative
     margin-bottom: 3rem

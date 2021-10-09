@@ -1,14 +1,15 @@
 <header>
-  <a sveltekit:prefetch href="/">
+  <a href="/">
     <figure></figure>
     doceazedo911
   </a>
 
   <navbar>
-    <a sveltekit:prefetch href="/" class="active">home</a>
-    <a sveltekit:prefetch href="/bot">comandos</a>
-    <a sveltekit:prefetch href="/icones">ícones</a>
-    <a sveltekit:prefetch href="/prime">sub grátis</a>
+    <a href="/">home</a>
+    <a href="/bot">comandos</a>
+    <a href="/icones">ícones</a>
+    <a href="/tts">tts</a>
+    <a href="/prime">sub grátis</a>
   </navbar>
 </header>
 
@@ -17,10 +18,10 @@
 </main>
 
 <footer>
-  <a href="https://github.com/doceazedo/doceazedo.com">made by doceazedo. powered by <b>svelte</b> & <b>sveltekit</b>.</a>
+  <a href="https://github.com/doceazedo/doceazedo.com">made by doceazedo. powered by <b>svelte 🧡</b> & <b>astro 🚀</b></a>
 </footer>
 
-<style type="text/sass">
+<style lang="sass">
   header,
   main,
   footer
@@ -46,7 +47,7 @@
         margin-right: .5rem
         background-color: #ccc
         border-radius: 50%
-        background-image: url('/img/avatar.png')
+        background-image: url('/assets/img/avatar.png')
         background-position: center
         background-repeat: no-repeat
         background-size: cover

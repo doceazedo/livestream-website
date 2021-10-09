@@ -36,7 +36,7 @@
   {slug.length > 14 ? `${slug.substring(0, 12)}...` : slug}
 </li>
 
-<style type="text/sass">
+<style lang="sass">
   li
     position: relative
     overflow: hidden

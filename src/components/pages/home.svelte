@@ -16,10 +16,10 @@
   <h2>there is no spoon</h2>
 
   <div class="list">
-    <a href="https://musicwrap.xyz"><img src="/img/emoji-guitar.svg" alt=""> musicwrap.xyz</a>
-    <a href="https://lucasfernandes.com.br"><img src="/img/emoji-technologist.svg" alt=""> lucasfernandes.com.br</a>
-    <a href="/bot"><img src="/img/emoji-robot.svg" alt=""> comandos do bot</a>
-    <a href="/icones"><img src="/img/emoji-masks.svg" alt=""> ícones de equipe</a>
+    <a href="https://musicwrap.xyz"><img src="/assets/img/emoji-guitar.svg" alt=""> musicwrap.xyz</a>
+    <a href="https://lucasfernandes.com.br"><img src="/assets/img/emoji-technologist.svg" alt=""> lucasfernandes.com.br</a>
+    <a href="/bot"><img src="/assets/img/emoji-robot.svg" alt=""> comandos do bot</a>
+    <a href="/icones"><img src="/assets/img/emoji-masks.svg" alt=""> ícones de equipe</a>
   </div>
 
   <div class="socials">
@@ -29,11 +29,9 @@
       </a>
     {/each}
   </div>
-
-  <a href="https://github.com/doceazedo/doceazedo.com" class="footer">powered by <b>svelte</b></a>
 </main>
 
-<style type="text/sass">
+<style lang="sass">
   main
     max-width: 50rem
     margin: 0 auto
@@ -45,7 +43,7 @@
     margin: 0 auto 1.5rem
     background-color: #ccc
     border-radius: 50%
-    background-image: url('/img/avatar.png')
+    background-image: url('/assets/img/avatar.png')
     background-position: center
     background-repeat: no-repeat
     background-size: cover
@@ -106,10 +104,4 @@
 
         &:hover
           fill: var(--color)
-
-  .footer
-    display: block
-    text-decoration: none
-    text-align: center
-    color: #fff
 </style>
