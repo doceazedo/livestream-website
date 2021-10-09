@@ -1,42 +1,37 @@
-# Welcome to [Astro](https://astro.build)
+<h1 align="center">doceazedo.com</h1>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/snowpackjs/astro/tree/latest/examples/starter)
+<p align="center">
+  Esse site reúne informações relacionadas às minhas streams de <a href="https://twitch.tv/doceazedo911">live coding na Twitch</a>, como comandos do bot, vozes do TTS, redes sociais e o que mais vier a ser útil para o viewers.
+</p>
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<p align="center">
+  <a href="https://app.netlify.com/sites/doceazedo/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/3f22adb2-3736-4a43-a788-778868473614/deploy-status" alt="Netlify Status">
+  </a>
+</p>
 
-## 🚀 Project Structure
+![Website screenshot](https://i.imgur.com/IUD9dHR.png)
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🚨 Forkeando esse repositório
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Apesar desse site ser open-source, o código não foi desenvolvido para servir de template, mas para meu uso pessoal. Mas é claro, sinta-se à vontade para forkear se você realmente quiser 🥰
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🚀 Instalação e build
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. Instale as dependências
 
-Any static assets, like images, can be placed in the `public/` directory.
+   ```sh
+   yarn
+   ```
 
-## 🧞 Commands
+2. Inicie o servidor de desenvolvimento
 
-All commands are run from the root of the project, from a terminal:
+   ```sh
+   yarn dev
+   ```
 
-| Command         | Action                                      |
-|:----------------|:--------------------------------------------|
-| `npm install`   | Installs dependencies                       |
-| `npm run dev`   | Starts local dev server at `localhost:3000` |
-| `npm run build` | Build your production site to `./dist/`     |
+3. Gere os arquivos de build
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).
+   ```sh
+   yarn build
+   ```
