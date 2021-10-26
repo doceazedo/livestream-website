@@ -13,7 +13,7 @@
     "astro": "^0.20.9"
   },
   "dependencies": {
-    "simple-icons": "^5.19.0",
+    "simple-icons": "^5.20.0",
     "tinycolor2": "^1.4.2"
   }
 }
