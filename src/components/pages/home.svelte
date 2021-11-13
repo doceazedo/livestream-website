@@ -14,7 +14,7 @@
 <main>
   <figure></figure>
   <h1>doceazedo911</h1>
-  <h2>there is no spoon</h2>
+  <h2>the cake is a lie</h2>
 
   <div class="list">
     <a href="https://musicwrap.xyz"><img src="/assets/img/emoji-guitar.svg" alt=""> musicwrap.xyz</a>
@@ -44,7 +44,7 @@
     margin: 0 auto 1.5rem
     background-color: #ccc
     border-radius: 50%
-    background-image: url('/assets/img/avatar.png')
+    background-image: url('/assets/img/avatar.jpg')
     background-position: center
     background-repeat: no-repeat
     background-size: cover
@@ -57,6 +57,7 @@
   h2
     text-align: center
     margin-bottom: 3rem
+    color: rgba(#fff, .75)
 
   .list
     display: flex
