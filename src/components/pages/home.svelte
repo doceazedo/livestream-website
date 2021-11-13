@@ -6,6 +6,7 @@
     { url: 'https://github.com/doceazedo', icon: simpleIcons.Get('github') },
     { url: 'https://twitter.com/doceazedo911', icon: simpleIcons.Get('twitter') },
     { url: 'https://instagram.com/doceazedo911', icon: simpleIcons.Get('instagram') },
+    { url: 'https://last.fm/user/doceazedo911', icon: simpleIcons.Get('lastdotfm') },
     { url: 'https://discord.gg/vEGRe2kq8B', icon: simpleIcons.Get('discord') },
   ];
 </script>
