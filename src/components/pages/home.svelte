@@ -2,12 +2,12 @@
   import simpleIcons from 'simple-icons';
 
   const socialIcons = [
-    { url: 'https://www.twitch.tv/doceazedo911', icon: simpleIcons.Get('twitch') },
-    { url: 'https://github.com/doceazedo', icon: simpleIcons.Get('github') },
-    { url: 'https://twitter.com/doceazedo911', icon: simpleIcons.Get('twitter') },
-    { url: 'https://instagram.com/doceazedo911', icon: simpleIcons.Get('instagram') },
-    { url: 'https://last.fm/user/doceazedo911', icon: simpleIcons.Get('lastdotfm') },
-    { url: 'https://discord.gg/vEGRe2kq8B', icon: simpleIcons.Get('discord') },
+    { url: 'https://www.twitch.tv/doceazedo911', icon: simpleIcons.Get('twitch')               },
+    { url: 'https://github.com/doceazedo',       icon: simpleIcons.Get('github'),   hex: 'aaa' },
+    { url: 'https://twitter.com/doceazedo911',   icon: simpleIcons.Get('twitter')              },
+    { url: 'https://instagram.com/doceazedo911', icon: simpleIcons.Get('instagram')            },
+    { url: 'https://last.fm/user/doceazedo911',  icon: simpleIcons.Get('lastdotfm')            },
+    { url: 'https://discord.gg/vEGRe2kq8B',      icon: simpleIcons.Get('discord')              },
   ];
 </script>
 
@@ -25,7 +25,7 @@
 
   <div class="socials">
     {#each socialIcons as social}
-      <a href={social.url} style="--color: #{social.icon.slug == 'github' ? 'aaa' : social.icon.hex}">
+      <a href={social.url} style="--color: #{social.hex || social.icon.hex}">
         {@html social.icon.svg}
       </a>
     {/each}
