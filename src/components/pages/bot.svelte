@@ -8,15 +8,15 @@
       aliases: ['dc', 'disc']
     },
     {
-      command: 'icone [codigo]',
+      command: 'icone <codigo>',
       aliases: ['icon', 'badge', 'team', 'time', 'equipe'],
       description: 'Define um ícone como um emblema personalizado que irá aparecer junto do seu nome no overlay. Mais informações na página "ícones".',
       example: 'icone svelte'
     },
     {
       command: 'musica',
-      description: 'Retorna a música que está tocando nesse momento.',
-      aliases: ['music', 'song']
+      description: 'Destaca a capa do álbum, foto do artista e envia o link da música que está tocando.',
+      aliases: ['music', 'song', 'stream']
     },
     {
       command: 'overlay',
@@ -39,16 +39,27 @@
       aliases: []
     },
     {
-      command: 'pronomes [principal]',
+      command: 'pronomes <principal>',
       predicate: '[secundário]',
       description: 'Define um ou dois pronomes que irão aparecer juntos do seu nome no overlay. Informe "ela", "ele" e/ou "elu". O segundo parâmetro é opcional.',
       aliases: ['pronome', 'pronoun', 'pronouns'],
       example: 'pronomes ela elu'
     },
     {
+      command: 'sh',
+      description: 'Comando exclusivo do Doce para mandar shout out para outros streamers.',
+      aliases: []
+    },
+    {
       command: 'social',
       description: 'Retorna uma lista com todas as minhas redes sociais.',
       aliases: ['socials', 'redes']
+    },
+    {
+      command: 'tts',
+      predicate: '[voz] <mensagem>',
+      description: 'Manda uma mensagem de voz. Mais informações na página "tts".',
+      aliases: []
     },
   ];
 
