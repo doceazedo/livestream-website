@@ -17,7 +17,7 @@
   <h2>the cake is a lie</h2>
 
   <div class="list">
-    <a href="https://musicwrap.xyz"><img src="/assets/img/emoji-guitar.svg" alt=""> musicwrap.xyz</a>
+    <a href="https://semaninha.com"><img src="/assets/img/emoji-guitar.svg" alt=""> semaninha</a>
     <a href="https://lucasfernandes.com.br"><img src="/assets/img/emoji-technologist.svg" alt=""> lucasfernandes.com.br</a>
     <a href="/bot"><img src="/assets/img/emoji-robot.svg" alt=""> comandos do bot</a>
     <a href="/icones"><img src="/assets/img/emoji-masks.svg" alt=""> ícones de equipe</a>
