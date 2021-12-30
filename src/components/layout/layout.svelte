@@ -47,7 +47,7 @@
         margin-right: .5rem
         background-color: #ccc
         border-radius: 50%
-        background-image: url('/assets/img/avatar.png')
+        background-image: url('/assets/img/avatar.webp')
         background-position: center
         background-repeat: no-repeat
         background-size: cover
