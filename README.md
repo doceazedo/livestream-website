@@ -1,3 +1,5 @@
+> ⚠ **This repository is now archived in favor of [doceazedo.com](https://github.com/doceazedo/doceazedo.com). All livestream related info are now available at https://doceazedo.com/live.**
+
 <h1 align="center">doceazedo.com</h1>
 
 <p align="center">
